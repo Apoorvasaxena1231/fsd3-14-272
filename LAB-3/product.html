@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest AI Agents</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111827, #4f46e5);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .search-box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .search-box input {
+            width: 70%;
+            padding: 15px 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-box input:focus {
+            border-color: #4f46e5;
+        }
+
+        .agents {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .agent-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #f8fafc;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #4f46e5;
+            color: white;
+            padding: 11px 18px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #3730a3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            background: #111827;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .search-box input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🤖 Latest AI Agents</h1>
+        <p>Explore powerful AI agents and intelligent AI tools</p>
+    </header>
+
+    <main class="container">
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search AI agents..."
+                onkeyup="searchAgents()"
+            >
+        </div>
+
+        <section class="agents" id="agentList">
+
+            <!-- ChatGPT -->
+            <div class="card">
+                <img
+                    class="agent-image"
+                    src="https://nationaltechnology.co.uk/images/ChatGPT-Logo.jpg"
+                    alt="ChatGPT Logo"
+                >
+
+                <div class="card-content">
+                    <span class="tag">AI Assistant</span>
+
+                    <h2>ChatGPT</h2>
+
+                    <p>
+                        An advanced AI assistant for answering questions,
+                        writing, coding, research and creative tasks.
+                    </p>
+
+                    <a
+                        href="https://chatgpt.com/"
+                        class="btn"
+                        target="_blank"
+                    >
+                        Explore
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Claude -->
+            <div class="card">
+                <img
+                    class="agent-image"
+                    src="https://images.moneycontrol.com/static-mcnews/2024/11/20241127095754_Screenshot-2024-11-27-at-3.01.00%E2%80%AFPM.png?height=720&impolicy=website&width=1280"
+                    alt="Claude AI Logo"
+                >
+
+                <div class="card-content">
+                    <span class="tag">AI Agent</span>
+
+                    <h2>Claude</h2>
+
+                    <p>
+                        An AI assistant designed for writing, analysis,
+                        coding and handling complex conversations.
+                    </p>
+
+                    <a
+                        href="https://claude.ai/"
+                        class="btn"
+                        target="_blank"
+                    >
+                        Explore
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Gemini -->
+            <div class="card">
+                <img
+                    class="agent-image"
+                    src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4c67d8f9a8f1a4c6e2e.png"
+                    alt="Google Gemini"
+                >
+
+                <div class="card-content">
+                    <span class="tag">AI Research</span>
+
+                    <h2>Google Gemini</h2>
+
+                    <p>
+                        Google's AI system for reasoning, coding,
+                        multimodal understanding and productivity.
+                    </p>
+
+                    <a
+                        href="https://gemini.google.com/"
+                        class="btn"
+                        target="_blank"
+                    >
+                        Explore
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Perplexity -->
+            <div class="card">
+                <img
+                    class="agent-image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Perplexity_AI_logo.svg"
+                    alt="Perplexity AI Logo"
+                >
+
+                <div class="card-content">
+                    <span class="tag">Research Agent</span>
+
+                    <h2>Perplexity</h2>
+
+                    <p>
+                        An AI-powered research assistant that searches
+                        the web and provides summarized answers.
+                    </p>
+
+                    <a
+                        href="https://www.perplexity.ai/"
+                        class="btn"
+                        target="_blank"
+                    >
+                        Explore
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- GitHub Copilot -->
+            <div class="card">
+                <img
+                    class="agent-image"
+                    src="https://github.githubassets.com/images/modules/site/copilot/copilot.png"
+                    alt="GitHub Copilot"
+                >
+
+                <div class="card-content">
+                    <span class="tag">Coding Agent</span>
+
+                    <h2>GitHub Copilot</h2>
+
+                    <p>
+                        An AI coding assistant that helps developers
+                        write, understand and improve code.
+                    </p>
+
+                    <a
+                        href="https://github.com/features/copilot"
+                        class="btn"
+                        target="_blank"
+                    >
+                        Explore
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Microsoft Copilot -->
+            <div class="card">
+                <img
+                    class="agent-image"
+                    src="https://ppc.land/wp-content/uploads/2023/11/Microsoft-Copilot-Logo.png"
+                    alt="Microsoft Copilot"
+                >
+
+                <div class="card-content">
+                    <span class="tag">AI Automation</span>
+
+                    <h2>Microsoft Copilot</h2>
+
+                    <p>
+                        An AI assistant designed for productivity,
+                        research, writing and everyday tasks.
+                    </p>
+
+                    <a
+                        href="https://copilot.microsoft.com/"
+                        class="btn"
+                        target="_blank"
+                    >
+                        Explore
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 AI Agents Directory | Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+
+    <script>
+        function searchAgents() {
+
+            let input =
+                document.getElementById("searchInput")
+                .value
+                .toLowerCase();
+
+            let cards =
+                document.querySelectorAll(".card");
+
+            cards.forEach(function(card) {
+
+                let text =
+                    card.innerText.toLowerCase();
+
+                if (text.includes(input)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+
+            });
+        }
+    </script>
+
+</body>
+</html>

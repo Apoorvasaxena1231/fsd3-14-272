@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Nexus | Products</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            color: white;
+            background:
+                radial-gradient(circle at 10% 20%, #3b1678 0%, transparent 30%),
+                radial-gradient(circle at 90% 10%, #063b78 0%, transparent 30%),
+                #070914;
+        }
+
+        nav {
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8%;
+
+            background: rgba(5, 7, 18, 0.9);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+
+            background: linear-gradient(90deg, #a855f7, #38bdf8);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #a78bfa;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px 50px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+
+            background: linear-gradient(90deg, #c084fc, #38bdf8);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            color: #9ca3af;
+            font-size: 18px;
+        }
+
+        .products {
+            width: 85%;
+            max-width: 1200px;
+            margin: 30px auto 80px;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            overflow: hidden;
+            border-radius: 20px;
+
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+
+            backdrop-filter: blur(15px);
+
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+
+            border-color: #8b5cf6;
+
+            box-shadow:
+                0 20px 50px rgba(80,40,180,0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .content h2 {
+            margin-bottom: 12px;
+        }
+
+        .content p {
+            color: #9ca3af;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 12px;
+
+            border-radius: 20px;
+
+            background: rgba(139,92,246,0.2);
+            color: #c4b5fd;
+
+            font-size: 13px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 11px 20px;
+
+            border-radius: 8px;
+
+            background: linear-gradient(135deg, #7c3aed, #0284c7);
+
+            color: white;
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(99,102,241,0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #71717a;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        @media(max-width:600px) {
+            nav {
+                padding: 0 4%;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">AI NEXUS</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>AI Products</h1>
+    <p>Explore powerful products built with modern artificial intelligence.</p>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img
+            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80"
+            alt="AI Automation"
+        >
+
+        <div class="content">
+            <span class="tag">Automation</span>
+
+            <h2>AI Automation</h2>
+
+            <p>
+                Automate repetitive tasks and create intelligent
+                workflows using AI-powered agents.
+            </p>
+
+            <a href="contact.html" class="btn">Get Started</a>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img
+            src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=900&q=80"
+            alt="AI Robotics"
+        >
+
+        <div class="content">
+            <span class="tag">Robotics</span>
+
+            <h2>AI Robotics</h2>
+
+            <p>
+                Discover intelligent robotic systems capable of
+                learning and making autonomous decisions.
+            </p>
+
+            <a href="contact.html" class="btn">Learn More</a>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img
+            src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=900&q=80"
+            alt="AI Development"
+        >
+
+        <div class="content">
+            <span class="tag">Development</span>
+
+            <h2>AI Development</h2>
+
+            <p>
+                Build modern applications using powerful AI
+                models, APIs and intelligent developer tools.
+            </p>
+
+            <a href="contact.html" class="btn">Explore</a>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+            alt="AI Analytics"
+        >
+
+        <div class="content">
+            <span class="tag">Analytics</span>
+
+            <h2>AI Analytics</h2>
+
+            <p>
+                Turn large amounts of data into useful insights
+                with intelligent AI-powered analytics.
+            </p>
+
+            <a href="contact.html" class="btn">Discover</a>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 AI Nexus | Explore the Future of AI
+</footer>
+
+</body>
+</html>

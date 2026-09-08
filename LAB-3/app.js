@@ -1,8 +1,11 @@
 import http from "http";
-const server = http.createServer((res,res)=>{
-    res.end("<h2> welcome to server side </h2>");
+
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { "Content-Type": "text/html" });
+  res.end("<h1>SIH Internal</h1>");
 });
 
 server.listen(5000, () => {
-  console.log("server is running");
+  console.log("Server is running on port 5000");
 });
