@@ -10,3 +10,4 @@ await rm("docs/resumes/data", { recursive: true });
 
 // removes main folder and subfoler also
 await rm("docs", { recursive: true });
+//prg
