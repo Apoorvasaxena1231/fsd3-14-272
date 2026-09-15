@@ -27,3 +27,4 @@ console.log("Updated Content\n", await readContent("notes.txt"));
 
 // The function we use await in , async should be used .
 // if there are curly brackets and in that there is key value pairs in it then we will use or create json file.
+//index
