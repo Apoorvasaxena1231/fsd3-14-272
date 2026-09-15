@@ -18,3 +18,4 @@ It allows JS code running outside the browser and interact directly to operating
 - Streaming Large Files -> createReadStream(), createWriteStream()
 - File Operations -> rename(), truncate(), unlink(), link(), syslink()
 ##  await can be used with any promise in async function . That async function will also accessed by await keyword. To call the async function we have to use await .
+//readme
