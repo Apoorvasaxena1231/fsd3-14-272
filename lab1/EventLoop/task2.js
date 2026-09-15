@@ -34,3 +34,4 @@ const main = () => {
   console.log("end");
 };
 main();
+//task2
