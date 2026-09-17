@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About - BlueConnect</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #080b12;
+            color: white;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #080b12, #0f2740);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            color: #38bdf8;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        .about-box {
+            background: #111827;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #1e3a5f;
+        }
+
+        .about-box .icon {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .about-box h3 {
+            color: #38bdf8;
+            font-size: 25px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            color: #38bdf8;
+            font-size: 35px;
+        }
+
+        .section-title p {
+            color: #94a3b8;
+        }
+
+        .mission {
+            background: #111827;
+            text-align: center;
+            border-radius: 12px;
+            padding: 45px;
+        }
+
+        .mission h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .mission p {
+            color: #cbd5e1;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .values {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .value {
+            background: #111827;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .value h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .value p {
+            color: #cbd5e1;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat {
+            background: #111827;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .stat h2 {
+            color: #38bdf8;
+            font-size: 35px;
+        }
+
+        footer {
+            background: #111827;
+            text-align: center;
+            padding: 30px;
+            color: #94a3b8;
+        }
+
+        footer span {
+            color: #38bdf8;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .about-container,
+            .values,
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">BlueConnect</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#devices">Devices</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>About BlueConnect</h1>
+        <p>Connecting people with modern wireless technology.</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section>
+
+        <div class="about-container">
+
+            <div class="about-text">
+                <h2>Connecting People With Technology</h2>
+
+                <p>
+                    BlueConnect is a website dedicated to Bluetooth
+                    technology and wireless devices.
+                </p>
+
+                <p>
+                    Our goal is to provide simple and useful information
+                    about Bluetooth-enabled devices and how they can make
+                    everyday activities easier.
+                </p>
+
+                <p>
+                    From headphones and speakers to smart watches and
+                    gaming controllers, Bluetooth has become an important
+                    part of modern technology.
+                </p>
+            </div>
+
+            <div class="about-box">
+                <div class="icon">🔵</div>
+                <h3>The Wireless Future</h3>
+                <p>
+                    Bluetooth makes it possible to connect devices
+                    without cables.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MISSION -->
+    <section>
+
+        <div class="mission">
+            <h2>Our Mission</h2>
+
+            <p>
+                Our mission is to make wireless technology easy to
+                understand and help users discover Bluetooth devices
+                that fit their everyday needs.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- VALUES -->
+    <section>
+
+        <div class="section-title">
+            <h2>Our Values</h2>
+            <p>What BlueConnect focuses on</p>
+        </div>
+
+        <div class="values">
+
+            <div class="value">
+                <h3>💡 Innovation</h3>
+                <p>
+                    We focus on modern wireless technology and new ideas.
+                </p>
+            </div>
+
+            <div class="value">
+                <h3>👍 User Friendly</h3>
+                <p>
+                    We believe technology should be simple and easy to use.
+                </p>
+            </div>
+
+            <div class="value">
+                <h3>🔗 Connectivity</h3>
+                <p>
+                    We promote convenient connections between devices.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+    <section>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h2>6+</h2>
+                <p>Devices</p>
+            </div>
+
+            <div class="stat">
+                <h2>100%</h2>
+                <p>Wireless Focus</p>
+            </div>
+
+            <div class="stat">
+                <h2>24/7</h2>
+                <p>Connectivity</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 <span>BlueConnect</span>. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
