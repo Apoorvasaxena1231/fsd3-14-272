@@ -9,11 +9,14 @@ const b1={
 function Book(){
   return(
     <div>
-      <img src="https://m.media-amazon.com/images/I/518+W2zr3BL._SY385_.jpg" alt="Design Pattern React Js"/>
-      <h1>Let us React</h1>
-      <h2>Price:765.00</h2>
-      <h3>Quantity:5</h3>
-      <h4>Rating:5.0</h4>
+      <img 
+      src={b1.picUrl}
+      alt={b1.bname}
+      />
+      <h1>{b1.bname}</h1>
+      <h2>Price:{b1.Price}</h2>
+      <h3>Quantity:{b1.quantity}</h3>
+      <h4>Rating:{b1.rating}</h4>
     </div>
   );
 }
