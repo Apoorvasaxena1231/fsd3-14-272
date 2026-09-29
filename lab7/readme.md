@@ -15,4 +15,10 @@
     c.select framework as react from arrow key
     d.select varient as javascript from arrow key
     e.select eslist for linting from arroe key
-    f.select install and start the frontend
+    f.select install and start the frontend.
+
+## Component
+1. simple js function return html directly
+2. It must starts with capital letter
+3. It should be treated as html tag
+4. It must be closed
