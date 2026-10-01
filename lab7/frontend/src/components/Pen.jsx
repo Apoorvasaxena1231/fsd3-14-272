@@ -1,9 +1,9 @@
 import React from 'react'
 
-const pen = (props) => {
+const Pen = (props) => {
     const{picUrl,company,price}=props.pen;
   return (
-    <div>
+    <div className='book'>
       <img src={picUrl} alt={company}/>
       <h3>{company}</h3>
       <h4>Rs. {price} </h4>
@@ -11,4 +11,4 @@ const pen = (props) => {
   )
 };
 
-export default pen
+export default Pen;
