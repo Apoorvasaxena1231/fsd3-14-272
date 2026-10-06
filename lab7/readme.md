@@ -45,3 +45,5 @@
  ```
  then apply with style attribute and pass the object.
  3. inline css= in this method we use 2 curly bracket with style attribute, all the css property must be single word, for e.g. text-align will become=textAlign (camelcase). 
+
+# app.jsx should be minimum code.
