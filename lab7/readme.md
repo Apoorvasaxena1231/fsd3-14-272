@@ -17,6 +17,16 @@
     e.select eslist for linting from arroe key
     f.select install and start the frontend.
 
+## add tailwind to existing react project
+1.open terminal and goto project frontend folder.
+2.install tailwind by
+`npm install tailwindcss @tailwind/vite`
+3. open vite.config.js
+4.add `import tailwindcss from '@tailwindcss/vite'`; in first line
+5.add 'tailwindcss()'after react()
+6.open index.css and remove all content then add
+@import "tailwindcss";
+
 ## Component
 1. simple js function return html directly
 2. It must starts with capital letter
@@ -49,3 +59,4 @@
 # app.jsx should be minimum code.
 
 # by default button in html is submit button.
+

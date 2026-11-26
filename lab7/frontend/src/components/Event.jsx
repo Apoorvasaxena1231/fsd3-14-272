@@ -4,9 +4,8 @@ const MyButton = () => {
   };
 
   return (
-    <button style={{ height: "40px", width: "100px" }} onClick={handleClick}>
-      Click Me
-    </button>
+    <button className="bg-black text-white rounded-md m-4 px-4 py-2">Submit</button>
+     
   );
 };
 
